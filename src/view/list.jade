@@ -22,7 +22,7 @@ div#list-view
         tr
           td {{ items.length + 1 }}
           td(colspan="2")
-            input.new-content(type="text",ng-model="content",ng-keypress="add($event)",ng-focus-on-change="focus")
+            input.new-content(type="text", ng-model="content", ng-keypress="add($event)", ng-focus-on-change="focus")
           td
             button.pure-button.pure-button-primary(ng-click="add($event)") Add
 
