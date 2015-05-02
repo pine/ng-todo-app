@@ -4,7 +4,7 @@ router = ($stateProvider, $urlRouterProvider) ->
   $stateProvider
     .state 'list',
       url: '/'
-      templateUrl: '/view/list.html'
+      templateUrl: 'view/list.html'
       controller: 'ListController'
 
 module.exports = [
