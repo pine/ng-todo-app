@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "gulp build-prod",
     "test": "gulp test"
   },
   "author": "Pine Mizune <pinemz@gmail.com> (https://github.com/pine613)",
