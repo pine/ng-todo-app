@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+.header {
+  .pure-menu {
+    padding: 0px 80px;
+    line-height: 30px;
+    background-color: @color-primary-3;
+    
+    .pure-menu-heading {
+      color: #fff;
+    }
+    
+    .pure-menu-list {
+      margin-left: 30px;
+      
+      .pure-menu-item {
+        a {
+          color: @color-primary-1;
+          
+          &:hover, &:focus {
+            background-color: @color-primary-4;
+          }
+        }
+      }
+    }
+  }
+}

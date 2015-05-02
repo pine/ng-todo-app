@@ -1,0 +1,28 @@
+div#list-view
+  h1 Todo List
+
+  div.content-inner
+    table.pure-table
+      thead
+        tr
+          th #
+          th Content
+          th Created at
+          th Delete
+
+      tbody
+        tr(ng-repeat="item in items")
+          td {{ $index + 1 }}
+          td {{ item.content }}
+          td {{ item.createdAt |date:'yyyy/MM/dd HH:mm' }}
+          td
+            button.pure-button.button-warning(ng-click="delete($index)") Delete
+      
+      tfoot
+        tr
+          td {{ items.length + 1 }}
+          td(colspan="2")
+            input.new-content(type="text",ng-model="content",ng-keypress="add($event)",ng-focus-on-change="focus")
+          td
+            button.pure-button.pure-button-primary(ng-click="add($event)") Add
+

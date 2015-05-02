@@ -1,0 +1,34 @@
+{
+  "name": "ng-todo-app",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "author": "Pine Mizune <pinemz@gmail.com> (https://github.com/pine613)",
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.9.2",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.2.0",
+    "gulp-coffeelint": "^0.4.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-htmlmin": "^1.1.1",
+    "gulp-if": "^1.2.5",
+    "gulp-jade": "^1.0.0",
+    "gulp-less": "^3.0.3",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.0.1",
+    "gulp-uglify": "^1.2.0",
+    "gulp-webpack": "^1.4.0",
+    "gulp-webserver": "^0.9.0"
+  },
+  "dependencies": {
+    "angular": "^1.3.15",
+    "angular-ui-router": "^0.2.14",
+    "lodash": "^3.8.0"
+  }
+}
