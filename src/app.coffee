@@ -9,3 +9,6 @@ app = angular.module('todo', [
 app.config require('./config/router')
 app.controller 'ListController', require('./controller/ListController')
 app.directive 'ngFocusOnChange', require('./directive/ngFocusOnChange')
+
+
+module.exports = app

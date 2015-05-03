@@ -7,8 +7,11 @@ $ = require('gulp-load-plugins')()
 # ---------------------------------------------------------
 
 runWebpack = (prod) ->
+  defaults = require('./webpack.config')
+  opt = _.extend(defaults, entry: './src/app.coffee')
+  
   gulp.src 'src/app.coffee'
-    .pipe $.webpack(require('./webpack.config'))
+    .pipe $.webpack(opt)
     .pipe $.if(prod, $.uglify())
 
 
@@ -61,6 +64,13 @@ gulp.task 'coffeelint', ->
     .pipe $.coffeelint.reporter()
 
 
+gulp.task 'karma', ->
+  gulp.src 'test/index.coffee'
+    .pipe $.karma
+      configFile: 'karma.conf.js'
+      action: 'run'
+
+
 gulp.task 'webserver', ->
   gulp.src('dist')
     .pipe $.webserver
@@ -82,5 +92,5 @@ gulp.task 'build', ['webpack', 'jade', 'less']
 gulp.task 'build-prod', ['webpack-prod', 'jade-prod', 'less-prod']
 
 gulp.task 'lint', ['coffeelint']
-gulp.task 'test', ['lint']
+gulp.task 'test', ['lint', 'karma']
 gulp.task 'default', ['watch']
