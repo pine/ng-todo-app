@@ -1,6 +1,8 @@
 ng-todo-app
 -----------
 
+[![Build Status](https://img.shields.io/travis/pine613/ng-todo-app/master.svg?style=flat-square)](https://travis-ci.org/pine613/ng-todo-app)
+
 This is the todo app that I created to learn AngularJS.
 
 ## Development environment
