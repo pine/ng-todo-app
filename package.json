@@ -10,6 +10,7 @@
   "author": "Pine Mizune <pinemz@gmail.com> (https://github.com/pine613)",
   "license": "MIT",
   "devDependencies": {
+    "chai": "^2.3.0",
     "coffee-loader": "^0.7.2",
     "coffee-script": "^1.9.2",
     "gulp": "^3.8.11",
@@ -25,7 +26,16 @@
     "gulp-stylus": "^2.0.1",
     "gulp-uglify": "^1.2.0",
     "gulp-webpack": "^1.4.0",
-    "gulp-webserver": "^0.9.0"
+    "gulp-webserver": "^0.9.0",
+    "karma": "^0.12.31",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.8",
+    "karma-firefox-launcher": "^0.1.4",
+    "karma-mocha": "^0.1.10",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-webpack": "^1.5.0",
+    "mocha": "^2.2.4",
+    "webpack": "^1.8.11"
   },
   "dependencies": {
     "angular": "^1.3.15",
