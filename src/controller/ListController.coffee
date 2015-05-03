@@ -2,10 +2,13 @@ ListController = ($scope) ->
   $scope.items = []
   $scope.content = ''
   $scope.focus = true
-
+  
+  
   $scope.delete = (index) ->
     $scope.items.splice(index, 1)
-
+    $scope.focus = true
+  
+  
   $scope.add = (e) ->
     # content is empty
     return unless $scope.content
