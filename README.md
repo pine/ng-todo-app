@@ -7,8 +7,11 @@ This is the todo app that I created to learn AngularJS.
 
  - [Node.js](https://nodejs.org/) (v0.10.x, or v0.12.x)
  - [CoffeeScript](http://coffeescript.org/)
+ - [Less](http://lesscss.org/)
+ - [Jade](http://jade-lang.com/)
  - [gulp.js](http://gulpjs.com/)
  - [webpack](http://webpack.github.io/)
+ - [Karma](http://karma-runner.github.io/)
 
 
 ## Dependencies
@@ -16,6 +19,8 @@ This is the todo app that I created to learn AngularJS.
  - [AngularJS](https://angularjs.org/)
  - [AngularUI Router](https://github.com/angular-ui/ui-router)
  - [Lo-dash](https://lodash.com/)
+ - [Mocha](http://mochajs.org/)
+ - [Chai](http://chaijs.com/)
 
 
 ## Build
