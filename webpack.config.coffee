@@ -1,7 +1,6 @@
 path = require('path')
 
 module.exports =
-  entry: './src/app.coffee'
   output:
     filename: 'bundle.js'
   module:
