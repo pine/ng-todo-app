@@ -9,13 +9,13 @@ ListController = ($scope) ->
     $scope.focus = true
   
   
-  $scope.add = (e) ->
+  $scope.add = (event) ->
     # content is empty
     return unless $scope.content
 
     # on keypress
-    if e and e.keyCode
-      return unless e.keyCode == 13
+    if event and event.keyCode
+      return unless event.keyCode == 13
 
     $scope.items.push
       content: $scope.content
