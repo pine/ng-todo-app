@@ -18,6 +18,20 @@ This is the todo app that I created to learn AngularJS.
  - [Lo-dash](https://lodash.com/)
 
 
+## Build
+
+```
+$ npm install
+$ npm run build
+```
+
+## Test
+
+```
+$ npm install
+$ npm test
+```
+
 ## License
 MIT License<br />
 Copyright (c) 2015 Pine Mizune
