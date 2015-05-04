@@ -1,5 +1,3 @@
-{ expect } = require('chai')
-
 describe 'Unit test: controller/ListController', ->
   $controller = null
   
