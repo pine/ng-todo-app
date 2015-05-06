@@ -35,12 +35,25 @@ $ npm run build
 ```
 
 ## Test
+### Unit test
 The tests run by [Karma](http://karma-runner.github.io/) with [PhantomJS](http://phantomjs.org/).
 
 ```
 $ npm install
 $ npm test
 ```
+
+
+### Integration test
+The tests run by [Nightwatch.js](http://nightwatchjs.org/) with [PhantomJS](http://phantomjs.org/).
+
+```
+$ npm install
+$ npm run build
+$ npm run webserver &
+$ npm run integration-test
+```
+
 
 ## License
 MIT License<br />
