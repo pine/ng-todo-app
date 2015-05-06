@@ -3,7 +3,7 @@ _ = require('lodash')
 require('angular')
 require('angular-mocks')
 
-require('../src/app')
+require('../../src/app')
 
 
 tests = require.context('./', true, /_test$/)
