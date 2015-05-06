@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "gulp build-prod",
-    "test": "gulp test"
+    "webserver": "gulp webserver",
+    "test": "gulp test",
+    "integration-test": "gulp nightwatch"
   },
   "author": "Pine Mizune <pinemz@gmail.com> (https://github.com/pine613)",
   "license": "MIT",
@@ -23,6 +25,7 @@
     "gulp-karma": "0.0.4",
     "gulp-less": "^3.0.3",
     "gulp-load-plugins": "^0.10.0",
+    "gulp-nightwatch": "^0.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "^2.0.1",
     "gulp-uglify": "^1.2.0",
@@ -35,6 +38,7 @@
     "karma-sinon-chai": "^0.3.0",
     "karma-webpack": "^1.5.0",
     "mocha": "^2.2.4",
+    "selenium-server": "^2.43.1",
     "webpack": "^1.8.11"
   },
   "dependencies": {

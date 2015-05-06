@@ -65,11 +65,16 @@ gulp.task 'coffeelint', ->
 
 
 gulp.task 'karma', ->
-  gulp.src 'test/index.coffee'
+  gulp.src 'test/unit/index.coffee'
     .pipe $.karma
       configFile: 'karma.conf.js'
       action: 'run'
 
+
+gulp.task 'nightwatch', ->
+  gulp.src ''
+    .pipe $.nightwatch
+      configFile: 'test/nightwatch.json'
 
 gulp.task 'webserver', ->
   gulp.src('dist')

@@ -4,4 +4,10 @@ node_js:
   - '0.12'
   - iojs
 
+scripts:
+  - npm test
+  - npm run build
+  - npm run webserver &
+  - npm run integration-test
+
 sudo: false
