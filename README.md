@@ -16,6 +16,7 @@ This is the todo app that I created to learn AngularJS.
  - [gulp.js](http://gulpjs.com/)
  - [webpack](http://webpack.github.io/)
  - [Karma](http://karma-runner.github.io/)
+ - [Nightwatch.js](http://nightwatchjs.org/) (Selenium wrapper)
 
 
 ## Dependencies
