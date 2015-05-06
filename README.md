@@ -33,6 +33,7 @@ $ npm run build
 ```
 
 ## Test
+The tests run by [Karma](http://karma-runner.github.io/) with [PhantomJS](http://phantomjs.org/).
 
 ```
 $ npm install
