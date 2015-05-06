@@ -8,6 +8,7 @@ script:
   - npm test
   - npm run build
   - npm run webserver &
+  - sleep 1
   - npm run integration-test
 
 sudo: false
