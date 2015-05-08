@@ -23,7 +23,7 @@ describe 'Unit test: controller/ListController', ->
   
   # ---------------------------------------------------------------------------
   
-  describe '$scope.delete', ->
+  describe '#delete', ->
     it 'should delete item', ->
       list = $controller('ListController')
       
@@ -38,7 +38,7 @@ describe 'Unit test: controller/ListController', ->
   
   # ---------------------------------------------------------------------------
   
-  describe '$scope.add', ->
+  describe '#add', ->
     it 'should add item', ->
       list = $controller('ListController')
       
