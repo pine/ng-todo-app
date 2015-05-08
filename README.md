@@ -24,8 +24,6 @@ This is the todo app that I created to learn AngularJS.
  - [AngularJS](https://angularjs.org/)
  - [AngularUI Router](https://github.com/angular-ui/ui-router)
  - [Lo-dash](https://lodash.com/)
- - [Mocha](http://mochajs.org/)
- - [Chai](http://chaijs.com/)
 
 
 ## Build
@@ -36,6 +34,8 @@ $ npm run build
 ```
 
 ## Test
+The tests depend [Mocha](http://mochajs.org/) and [Chai](http://chaijs.com/).
+
 ### Unit test
 The tests run by [Karma](http://karma-runner.github.io/) with [PhantomJS](http://phantomjs.org/).
 
