@@ -1,31 +1,31 @@
-ListController = ($scope) ->
-  $scope.items = []
-  $scope.content = ''
-  $scope.focus = true
+class ListController
+  constructor: ->
+    @items = []
+    @content = ''
+    @focus = true
   
   
-  $scope.delete = (index) ->
-    $scope.items.splice(index, 1)
-    $scope.focus = true
+  delete: (index) ->
+    @items.splice(index, 1)
+    @focus = true
   
   
-  $scope.add = (event) ->
+  add: (event) ->
     # content is empty
-    return unless $scope.content
+    return unless @content
 
     # on keypress
     if event and event.keyCode
       return unless event.keyCode == 13
 
-    $scope.items.push
-      content: $scope.content
+    @items.push
+      content: @content
       createdAt: new Date()
 
-    $scope.content = ''
-    $scope.focus = true
+    @content = ''
+    @focus = true
 
 
 module.exports = [
-  '$scope',
   ListController
 ]
