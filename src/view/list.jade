@@ -1,4 +1,4 @@
-div#list-view
+div#list-view(ng-controller="ListController as list")
   h1 Todo List
 
   div.content-inner
@@ -11,18 +11,18 @@ div#list-view
           th Delete
 
       tbody
-        tr(ng-repeat="item in items")
+        tr(ng-repeat="item in list.items")
           td {{ $index + 1 }}
           td {{ item.content }}
           td {{ item.createdAt |date:'yyyy/MM/dd HH:mm' }}
           td
-            button.pure-button.button-warning(ng-click="delete($index)") Delete
+            button.pure-button.button-warning(ng-click="list.delete($index)") Delete
       
       tfoot
         tr
-          td {{ items.length + 1 }}
+          td {{ list.items.length + 1 }}
           td(colspan="2")
-            input.new-content(type="text", ng-model="content", ng-keypress="add($event)", ng-focus-on-change="focus")
+            input.new-content(type="text", ng-model="list.content", ng-keypress="list.add($event)", ng-focus-on-change="list.focus")
           td
-            button.pure-button.pure-button-primary(ng-click="add($event)") Add
+            button.pure-button.pure-button-primary(ng-click="list.add($event)") Add
 

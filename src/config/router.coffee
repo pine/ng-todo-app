@@ -1,11 +1,11 @@
 router = ($stateProvider, $urlRouterProvider) ->
-  $urlRouterProvider.otherwise('/')
-  
   $stateProvider
     .state 'list',
       url: '/'
       templateUrl: 'view/list.html'
-      controller: 'ListController'
+  
+  $urlRouterProvider.otherwise('/')
+
 
 module.exports = [
   '$stateProvider',
