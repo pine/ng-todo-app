@@ -1,3 +1,9 @@
+# DEPRECATED
+
+:warning: This package is no longer maintained.
+
+---
+
 ng-todo-app
 -----------
 
